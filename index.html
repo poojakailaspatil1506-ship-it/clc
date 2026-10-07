@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSphere | Cloud Computing Explorer & Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">☁️</span>
+            <h2>Cloud<strong>Sphere</strong></h2>
+        </div>
+        <nav class="nav-links">
+            <button class="nav-btn active" data-tab="overview">Cloud Models</button>
+            <button class="nav-btn" data-tab="estimator">Resource Estimator</button>
+            <button class="nav-btn" data-tab="architect">Architecture Builder</button>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <!-- TAB 1: CLOUD MODELS OVERVIEW -->
+        <section id="overview" class="tab-content active">
+            <div class="hero">
+                <h1>Understanding Cloud Computing</h1>
+                <p>Explore the fundamental service models that power modern digital infrastructure.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card model-card">
+                    <div class="card-badge iaas">IaaS</div>
+                    <h3>Infrastructure as a Service</h3>
+                    <p>Provides virtualized computing resources over the internet such as virtual servers, storage, and networking.</p>
+                    <ul class="feature-list">
+                        <li>✔️ Complete OS control</li>
+                        <li>✔️ Virtual Machines (VMs)</li>
+                        <li>✔️ Scalable Storage & VPCs</li>
+                    </ul>
+                    <div class="card-footer"><strong>Examples:</strong> AWS EC2, Azure VMs, Google Compute Engine</div>
+                </div>
+
+                <div class="card model-card">
+                    <div class="card-badge paas">PaaS</div>
+                    <h3>Platform as a Service</h3>
+                    <p>Provides a hardware and software framework for developers to build, test, and deploy applications effortlessly.</p>
+                    <ul class="feature-list">
+                        <li>✔️ Automated runtime management</li>
+                        <li>✔️ Integrated databases & tools</li>
+                        <li>✔️ Zero infrastructure overhead</li>
+                    </ul>
+                    <div class="card-footer"><strong>Examples:</strong> Heroku, AWS Elastic Beanstalk, Google App Engine</div>
+                </div>
+
+                <div class="card model-card">
+                    <div class="card-badge saas">SaaS</div>
+                    <h3>Software as a Service</h3>
+                    <p>Delivers fully managed, ready-to-use software applications directly through a web browser.</p>
+                    <ul class="feature-list">
+                        <li>✔️ No installation required</li>
+                        <li>✔️ Subscription-based access</li>
+                        <li>✔️ Automatic updates</li>
+                    </ul>
+                    <div class="card-footer"><strong>Examples:</strong> Google Workspace, Microsoft 365, Salesforce</div>
+                </div>
+
+                <div class="card model-card">
+                    <div class="card-badge faas">FaaS / Serverless</div>
+                    <h3>Function as a Service</h3>
+                    <p>Executes application logic on demand in response to events without maintaining persistent servers.</p>
+                    <ul class="feature-list">
+                        <li>✔️ Event-driven execution</li>
+                        <li>✔️ Pay strictly per millisecond</li>
+                        <li>✔️ Auto-scales from 0 to thousands</li>
+                    </ul>
+                    <div class="card-footer"><strong>Examples:</strong> AWS Lambda, Azure Functions, Cloud Functions</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: RESOURCE ESTIMATOR -->
+        <section id="estimator" class="tab-content">
+            <div class="hero">
+                <h1>Cloud Cost Estimator</h1>
+                <p>Configure compute, storage, and database requirements to calculate estimated monthly costs.</p>
+            </div>
+
+            <div
